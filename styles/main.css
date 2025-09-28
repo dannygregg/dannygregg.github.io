@@ -10,7 +10,7 @@ body {
   padding: 15px 1.5em;
   border: 1px solid black;
   border-radius: 25px;
-  box-shadow: 5 px 5px 0 0;
+  box-shadow: 5px 5px 0 0;
   background-image: url("../images/shsulogo.png");
   background-position: right;
   background-repeat: repeat-y;
@@ -42,7 +42,7 @@ main {
 }
 main h3 {
     font-size: 105%;
-    margin: 1.5em 2 em 1.5em;
+    margin: 1.5em 2em 1.5em;
     border: 5px dashed blue;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px red;
@@ -56,7 +56,7 @@ main nav {
     padding: .5em;
 }
 #list {
-
+    line-height: 1.5em;
 }
 div.contact {
     margin: 1.5em 2em 0 2em;
@@ -66,5 +66,6 @@ div.contact {
     padding: 1em;  
 }
 footer p.copyright {
-
+    text-align: center;
+    font-size: 80%;
 }
