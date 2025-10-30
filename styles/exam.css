@@ -9,6 +9,10 @@ nav {
     padding: 1em 0;  
     text-decoration: none;
     background-color: blue;
+    background-image: url('https://www.transparenttextures.com/patterns/diagonal-noise.png');
+    background-repeat: repeat-y;
+    background-position: right;
+    background-attachment: fixed;
     color: white;
     font-weight: bold;
     border-right: 2px solid white; 
