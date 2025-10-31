@@ -1,5 +1,5 @@
 html {
-  background: linear-gradient(to bottom, lightblue, white);
+  background: linear-gradient(to bottom, lightblue 0%, white 100%);
   height: 100%;
 }
 /* ===== Body ===== */
