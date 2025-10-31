@@ -9,7 +9,7 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   border: 2px solid blue;
-  background-image: url('images/shsulogo.png');
+  background-image: url('images/shsulogo');
   background-repeat: repeat-y;
   background-position: right;
   background-attachment: fixed;
