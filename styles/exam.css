@@ -1,93 +1,96 @@
-html {
-  background: linear-gradient(to left, lightblue, white);
-  height: 100%;
+body {
+  width: 95%;
+  margin: 15px auto;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  border: 2px solid blue;
+  background-image: url('images/shsulogo.png');
+  background-repeat: repeat-y;
+  background-position: right;
+  background-size: 200px;
+  background-attachment: fixed;
 }
-nav {
-    text-align: center;
-    display: block;
-    width: 175px;
-    padding: 1em 0;  
-    text-decoration: none;
-    background-color: blue;
-    color: white;
-    font-weight: bold;
-    border-right: 2px solid white; 
+
+/* Navigation Bar */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: #0033cc;
+  border-bottom: 3px solid blue;
 }
-body { 
-    width: 90%;
-    margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: image(shsulogo.png);
-    background-repeat: repeat-y;
-    background-position: right;
-    background-attachment: fixed;
-    background-color: #fff;
-    border: 2px solid blue;
-    padding: 1em;
+
+nav ul li {
+  flex: 1;
+  text-align: center;
 }
-a {
-  color: blue;
+
+nav ul li a {
+  display: block;
+  padding: 12px;
+  color: white;
   text-decoration: none;
+  font-weight: bold;
 }
-a:hover,
-a:focus {
-  border: 3px blue;
-  border-style: dotted solid;
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #0000aa;
 }
-h1, h2, h3, h4 {
-  color: blue;
-  font-family: "Trebuchet MS", sans-serif;
+
+/* Main Content */
+h1 {
+  color: #0033cc;
+  border-bottom: 2px solid blue;
 }
-.shadow {
-  text-shadow: 2px 2px 4px gray;
+
+h2 {
+  color: #0033cc;
 }
-article {
-  clear: left;
-  width: 70%;
+
+p {
+  text-align: justify;
+  margin-right: 25%;
+  border-right: 2px dotted blue;
+  padding-right: 10px;
+}
+
+img {
   float: left;
-  column-count: 2;
-  column-rule: 2px dotted blue;
-  column-gap: 2em;
-  margin-left: 2em;
+  margin: 5px 10px 5px 0;
+  border: 1px solid blue;
 }
-article h3 {
-  column-span: all;
-}
-article img {
-  float: left;
-  margin-right: 1em;
-  margin-bottom: 1em;
-}
-article p::first-letter {
-  font-size: 3em;
+
+.first {
+  font-size: 1.5em;
   font-weight: bold;
   font-style: italic;
-  color: black;
 }
+
+/* Sidebar */
 aside {
-  width: 20%;
-  float: right;
-  background-color: #ffebc6;
-  padding: 1em;
-  box-sizing: border-box;
-}
-footer {
-  clear: both;
-  border-top: 2px solid blue;
-  text-align: center;
-  padding-top: 0.5em;
-  margin-top: 1em;
-}
-p.fixed {
   position: fixed;
-  bottom: 10px;
-  right: 10px;
-  background-color: #ffebc6;
+  right: 50px;
+  top: 150px;
+  width: 220px;
+  background-color: #cce6ff;
   border: 2px solid blue;
-  border-radius: 10px;
-  padding: 0.5em 1em;
-  box-shadow: 2px 2px 5px gray;
-  width: auto;
-  font-weight: bold;
-  color: blue;
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+aside a {
+  color: #0033cc;
+  text-decoration: none;
+}
+
+aside a:hover {
+  text-decoration: underline;
+}
+
+aside ol,
+aside ul {
+  margin: 0 0 10px 15px;
+  padding: 0;
 }
