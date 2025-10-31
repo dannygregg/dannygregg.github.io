@@ -10,42 +10,37 @@ body {
   background-attachment: fixed;
   background-size: 200px;
 }
-nav {
- #nav_menu ul { list-style-type: none; }
-#nav_menu ul li { float: left; }
-#nav_menu ul li a {
-    text-align: center;
-    display: block;
-    width: 175px;
-    padding: 1em 0;  
-    text-decoration: none;
-    background-color: blue;
-    color: white;
-    font-weight: bold;
-    border-right: 2px solid white; }
-#nav_menu ul li a.lastitem { border-right: none; }	
-#nav_menu ul li a.current { color: yellow; }
-}
-.menu {
-  list-style: none;
+#nav_menu ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
+  overflow: hidden;
+  border-top: 2px solid blue;
+  border-bottom: 2px solid blue;
 }
-.menu li {
-  flex: 1;
+#nav_menu ul li {
+  float: left;
+}
+#nav_menu ul li a {
   text-align: center;
-}
-.menu a {
   display: block;
-  padding: 12px;
-  color: white;
+  width: 175px;
+  padding: 1em 0;
   text-decoration: none;
+  background-color: blue;
+  color: white;
   font-weight: bold;
+  border-right: 2px solid white;
 }
-.menu a:hover,
-.menu a.active {
-  background-color: #0000aa;
+#nav_menu ul li a.lastitem {
+  border-right: none;
+}
+#nav_menu ul li a:hover {
+  background-color: yellow;
+  color: blue;
+}
+#nav_menu ul li a.current {
+  color: yellow;
 }
 main {
   display: flex;
