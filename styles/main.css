@@ -19,9 +19,6 @@ nav {
     padding: 0;
     display: flex;
 }
-.menu li {
-    flex: 1;
-}
 .menu a {
     display: block;
     text-align: center;
