@@ -7,74 +7,135 @@ body {
   background-image: url('images/shsulogo.png');
   background-repeat: repeat-y;
   background-position: right;
-  background-size: 200px;
   background-attachment: fixed;
+  background-size: 200px;
 }
-nav ul {
+
+/* ===== Navigation Bar ===== */
+nav {
+  background-color: #0033cc;
+  border-bottom: 2px solid blue;
+}
+
+.menu {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-  background-color: #0033cc;
-  border-bottom: 3px solid blue;
 }
-nav ul li {
+
+.menu li {
   flex: 1;
   text-align: center;
 }
-nav ul li a {
+
+.menu a {
   display: block;
   padding: 12px;
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
-nav ul li a:hover,
-nav ul li a.active {
+
+.menu a:hover,
+.menu a.active {
   background-color: #0000aa;
 }
-h1 {
-  color: #0033cc;
+
+/* ===== Main Layout ===== */
+main {
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid blue;
   border-bottom: 2px solid blue;
+  padding-top: 10px;
 }
-h2 {
-  color: #0033cc;
+
+article {
+  width: 75%;
+  padding-right: 15px;
+  border-right: 2px solid blue;
 }
-p {
-  text-align: justify;
-  margin-right: 25%;
-  border-right: 2px dotted blue;
-  padding-right: 10px;
-}
-img {
-  float: left;
-  margin: 5px 10px 5px 0;
-  border: 1px solid blue;
-}
-.first {
-  font-size: 1.5em;
-  font-weight: bold;
-  font-style: italic;
-}
+
 aside {
+  width: 20%;
   position: fixed;
-  right: 50px;
+  right: 2%;
   top: 150px;
-  width: 220px;
   background-color: #cce6ff;
   border: 2px solid blue;
   padding: 10px;
   font-size: 0.9em;
 }
+
+/* ===== Typography ===== */
+h1, h2 {
+  color: #0033cc;
+}
+
+h1 {
+  border-bottom: 2px solid blue;
+}
+
+p {
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.first-letter {
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* ===== Image Styling ===== */
+img {
+  float: left;
+  margin: 5px 10px 5px 0;
+  border: 1px solid blue;
+  width: 150px;
+  height: auto;
+}
+
+/* ===== Sidebar ===== */
+aside ol {
+  list-style-type: upper-roman;
+  margin-left: 15px;
+  padding-left: 10px;
+}
+
+aside ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
 aside a {
   color: #0033cc;
   text-decoration: none;
 }
+
 aside a:hover {
   text-decoration: underline;
 }
-aside ol,
-aside ul {
-  margin: 0 0 10px 15px;
-  padding: 0;
+
+aside .top {
+  display: block;
+  margin-top: 10px;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 2px solid blue;
+  background-color: #f2f2f2;
+}
+
+footer a {
+  color: #0033cc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
