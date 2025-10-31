@@ -52,22 +52,21 @@ main {
 article {
   width: 75%;
   padding-right: 15px;
-  border-right: 2px solid blue;
+  border-right: 2px dotted blue;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-aside {
-  width: 20%;
-  position: fixed;
-  right: 2%;
-  top: 150px;
-  background-color: #cce6ff;
-  border: 2px solid blue;
-  padding: 10px;
-  font-size: 0.9em;
+article section {
+  width: 47%;
+  border-bottom: 2px dotted blue;
+  padding-bottom: 10px;
 }
 h1, h2 {
   color: #0033cc;
 }
 h1 {
+  width: 100%;
   border-bottom: 2px solid blue;
 }
 p {
@@ -86,22 +85,34 @@ img {
   width: 150px;
   height: auto;
 }
+aside {
+  width: 20%;
+  position: fixed;
+  right: 2%;
+  top: 150px;
+  background-color: #cce6ff;
+  border: 2px solid blue;
+  padding: 10px;
+  font-size: 0.9em;
+}
 aside ol {
   list-style-type: upper-roman;
   margin-left: 15px;
   padding-left: 10px;
 }
 aside ul {
-  list-style-type: square;
-  margin-left: 20px;
+  list-style-type: lower-alpha;
+  margin-left: 25px;
 }
 aside a {
   color: #0033cc;
-  text-decoration: none;
-}
-aside a:hover {
   text-decoration: underline;
 }
+aside a:hover {
+  color: blue;
+  text-decoration: none;
+}
+
 aside .top {
   display: block;
   margin-top: 10px;
@@ -114,8 +125,8 @@ footer {
 }
 footer a {
   color: #0033cc;
-  text-decoration: none;
+  text-decoration: underline;
 }
 footer a:hover {
-  text-decoration: underline;
+  color: blue;
 }
