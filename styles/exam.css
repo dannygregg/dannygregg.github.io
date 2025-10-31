@@ -10,25 +10,20 @@ body {
   background-attachment: fixed;
   background-size: 200px;
 }
-
-/* ===== Navigation Bar ===== */
 nav {
   background-color: #0033cc;
   border-bottom: 2px solid blue;
 }
-
 .menu {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
 }
-
 .menu li {
   flex: 1;
   text-align: center;
 }
-
 .menu a {
   display: block;
   padding: 12px;
@@ -36,13 +31,10 @@ nav {
   text-decoration: none;
   font-weight: bold;
 }
-
 .menu a:hover,
 .menu a.active {
   background-color: #0000aa;
 }
-
-/* ===== Main Layout ===== */
 main {
   display: flex;
   justify-content: space-between;
@@ -50,13 +42,11 @@ main {
   border-bottom: 2px solid blue;
   padding-top: 10px;
 }
-
 article {
   width: 75%;
   padding-right: 15px;
   border-right: 2px solid blue;
 }
-
 aside {
   width: 20%;
   position: fixed;
@@ -67,28 +57,21 @@ aside {
   padding: 10px;
   font-size: 0.9em;
 }
-
-/* ===== Typography ===== */
 h1, h2 {
   color: #0033cc;
 }
-
 h1 {
   border-bottom: 2px solid blue;
 }
-
 p {
   text-align: justify;
   margin-bottom: 15px;
 }
-
 .first-letter {
   font-size: 1.5em;
   font-style: italic;
   font-weight: bold;
 }
-
-/* ===== Image Styling ===== */
 img {
   float: left;
   margin: 5px 10px 5px 0;
@@ -96,46 +79,36 @@ img {
   width: 150px;
   height: auto;
 }
-
-/* ===== Sidebar ===== */
 aside ol {
   list-style-type: upper-roman;
   margin-left: 15px;
   padding-left: 10px;
 }
-
 aside ul {
   list-style-type: square;
   margin-left: 20px;
 }
-
 aside a {
   color: #0033cc;
   text-decoration: none;
 }
-
 aside a:hover {
   text-decoration: underline;
 }
-
 aside .top {
   display: block;
   margin-top: 10px;
 }
-
-/* ===== Footer ===== */
 footer {
   text-align: center;
   padding: 10px 0;
   border-top: 2px solid blue;
   background-color: #f2f2f2;
 }
-
 footer a {
   color: #0033cc;
   text-decoration: none;
 }
-
 footer a:hover {
   text-decoration: underline;
 }
