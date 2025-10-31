@@ -55,12 +55,13 @@ main {
   padding-top: 10px;
 }
 article {
-  width: 75%;
-  padding-right: 15px;
-  border-right: 2px dotted blue;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  clear: left;
+  width: 70%;
+  float: left;
+  column-count: 2;
+  column-rule: 2px dotted blue;
+  column-gap: 2em;
+  margin-left: 2em;
 }
 
 /* Sections formatted as rows/columns */
