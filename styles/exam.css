@@ -10,8 +10,6 @@ body {
   background-size: 200px;
   background-attachment: fixed;
 }
-
-/* Navigation Bar */
 nav ul {
   list-style: none;
   margin: 0;
@@ -20,12 +18,10 @@ nav ul {
   background-color: #0033cc;
   border-bottom: 3px solid blue;
 }
-
 nav ul li {
   flex: 1;
   text-align: center;
 }
-
 nav ul li a {
   display: block;
   padding: 12px;
@@ -33,42 +29,33 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold;
 }
-
 nav ul li a:hover,
 nav ul li a.active {
   background-color: #0000aa;
 }
-
-/* Main Content */
 h1 {
   color: #0033cc;
   border-bottom: 2px solid blue;
 }
-
 h2 {
   color: #0033cc;
 }
-
 p {
   text-align: justify;
   margin-right: 25%;
   border-right: 2px dotted blue;
   padding-right: 10px;
 }
-
 img {
   float: left;
   margin: 5px 10px 5px 0;
   border: 1px solid blue;
 }
-
 .first {
   font-size: 1.5em;
   font-weight: bold;
   font-style: italic;
 }
-
-/* Sidebar */
 aside {
   position: fixed;
   right: 50px;
@@ -79,16 +66,13 @@ aside {
   padding: 10px;
   font-size: 0.9em;
 }
-
 aside a {
   color: #0033cc;
   text-decoration: none;
 }
-
 aside a:hover {
   text-decoration: underline;
 }
-
 aside ol,
 aside ul {
   margin: 0 0 10px 15px;
