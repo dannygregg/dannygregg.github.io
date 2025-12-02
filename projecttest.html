@@ -1,186 +1,81 @@
-<!-- projecttest.html (Home Page) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Montra Thai Massage | Home</title>
-  <meta name="description" content="Montra Thai Massage — Traditional Thai massage in Houston, TX." />
+  <meta name="description" content="Montra Thai Massage — Authentic Thai massage therapy in Houston, TX. Book appointments, see pricing, and find our location." />
   <link rel="stylesheet" href="projecttest.css" />
 </head>
 <body>
-  <header class="site-header">
+  <header class="site-header" role="banner">
     <div class="container header-container">
-      <a href="projecttest.html" class="logo"><img src="montra-logo.png" alt="Montra Thai Massage logo" /></a>
-      <nav class="nav-menu">
+      <a class="logo" href="projecttest.html" aria-label="Montra Thai Massage Home">Montra Thai Massage</a>
+
+      <nav class="nav-menu" role="navigation" aria-label="Main navigation">
         <ul>
           <li><a href="projecttest.html">Home</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="location.html">Location</a></li>
+          <li><a href="projecttest-pricing.html">Pricing</a></li>
+          <li><a href="projecttest-gallery.html">Gallery</a></li>
+          <li><a href="projecttest-location.html">Location</a></li>
         </ul>
       </nav>
-      <a class="btn-book" href="https://www.vagaro.com">Book Now</a>
+
+      <a class="btn-book" href="#" aria-label="Book Now">Book Now</a>
     </div>
   </header>
 
-  <main>
-    <section class="hero">
+  <main id="main" role="main">
+    <section class="hero" aria-labelledby="hero-heading">
       <div class="container">
-        <h1>Your Body, Our Passion</h1>
-        <p>Experience the healing power of traditional Thai massage in a relaxing environment.</p>
-        <p><strong>Hours:</strong> Mon–Sun: 10am – 8pm</p>
-        <p><strong>Address:</strong> 6611 Kirby Drive, Houston, TX 77005</p>
-        <p><strong>Tel:</strong> 832-541-7746</p>
+        <h1 id="hero-heading">Relax — Restore — Rejuvenate</h1>
+        <p>Experience authentic Thai massage therapy in a calm, welcoming environment. Our therapists tailor each session to your needs.</p>
+        <p class="hero-contact">
+          <strong>Call:</strong> <a href="tel:8325417746">832-541-7746</a> &nbsp;|&nbsp;
+          <strong>Address:</strong> 6611 Kirby Drive, Houston, TX 77005
+        </p>
       </div>
     </section>
 
-    <section class="images-grid">
+    <section class="services-section" aria-labelledby="services-heading">
       <div class="container">
-        <img src="Shoulder Massage.jpg" alt="Shoulder massage" />
-        <img src="Hot Stone Massage.jpg" alt="Hot stone massage" />
-        <img src="Luxury Spa.jpg" alt="Spa environment" />
+        <h2 id="services-heading">Our Services</h2>
+        <div class="services-grid">
+          <article class="service-card" aria-labelledby="s1">
+            <h3 id="s1">Traditional Thai Massage</h3>
+            <p>Active stretching and pressure to improve flexibility and circulation.</p>
+          </article>
+
+          <article class="service-card" aria-labelledby="s2">
+            <h3 id="s2">Deep Tissue</h3>
+            <p>Focused work to release chronic muscle tension and knots.</p>
+          </article>
+
+          <article class="service-card" aria-labelledby="s3">
+            <h3 id="s3">Hot Stone Therapy</h3>
+            <p>Warm stones combined with massage to ease tension and promote relaxation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="preview-gallery" aria-labelledby="gallery-preview">
+      <div class="container">
+        <h2 id="gallery-preview">Gallery Preview</h2>
+        <div class="gallery-grid">
+          <img src="gallery1.jpg" alt="Massage room with table and warm lighting" />
+          <img src="gallery2.jpg" alt="Therapist performing Thai stretch" />
+          <img src="gallery3.jpg" alt="Relaxation lounge with plants" />
+        </div>
+        <p class="more-link"><a href="projecttest-gallery.html">View full gallery →</a></p>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="container"><p>© 2025 Montra Thai Massage</p></div></footer>
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© 2025 Montra Thai Massage — Houston, TX • <a href="projecttest-location.html">Find us</a></p>
+    </div>
+  </footer>
 </body>
 </html>
-
-
-<!-- pricing.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pricing | Montra Thai Massage</title>
-  <link rel="stylesheet" href="projecttest.css" />
-</head>
-<body>
-<header class="site-header">
-  <div class="container header-container">
-    <a href="projecttest.html" class="logo"><img src="montra-logo.png" alt="Montra Thai Massage logo" /></a>
-    <nav class="nav-menu">
-      <ul>
-        <li><a href="projecttest.html">Home</a></li>
-        <li><a href="pricing.html" class="active">Pricing</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="location.html">Location</a></li>
-      </ul>
-    </nav>
-    <a class="btn-book" href="https://www.vagaro.com">Book Now</a>
-  </div>
-</header>
-
-<main>
-  <section class="page-header"><h1>Pricing & Packages</h1></section>
-
-  <section class="pricing-section container">
-    <div class="pricing-card">
-      <h2>Traditional Thai Massage</h2>
-      <p>60 Min — $70</p>
-      <p>90 Min — $100</p>
-      <p>120 Min — $140</p>
-    </div>
-
-    <div class="pricing-card">
-      <h2>Thai Combination Massage</h2>
-      <p>60 Min — $80</p>
-      <p>90 Min — $115</p>
-      <p>120 Min — $155</p>
-    </div>
-
-    <div class="pricing-card">
-      <h2>Deep Tissue / Swedish</h2>
-      <p>60 Min — $85</p>
-      <p>90 Min — $120</p>
-      <p>120 Min — $160</p>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer"><div class="container"><p>© 2025 Montra Thai Massage</p></div></footer>
-</body>
-</html>
-
-
-<!-- gallery.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gallery | Montra Thai Massage</title>
-  <link rel="stylesheet" href="projecttest.css" />
-</head>
-<body>
-<header class="site-header">
-  <div class="container header-container">
-    <a href="projecttest.html" class="logo"><img src="montra-logo.png" alt="Montra Thai Massage logo" /></a>
-    <nav class="nav-menu">
-      <ul>
-        <li><a href="projecttest.html">Home</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="gallery.html" class="active">Gallery</a></li>
-        <li><a href="location.html">Location</a></li>
-      </ul>
-    </nav>
-    <a class="btn-book" href="https://www.vagaro.com">Book Now</a>
-  </div>
-</header>
-
-<main>
-  <section class="page-header"><h1>Gallery</h1></section>
-
-  <section class="gallery-grid container">
-    <img src="gallery1.jpg" alt="Massage room" />
-    <img src="gallery2.jpg" alt="Thai decor" />
-    <img src="gallery3.jpg" alt="Spa ambience" />
-    <img src="gallery4.jpg" alt="Massage therapy" />
-    <img src="gallery5.jpg" alt="Relaxation area" />
-    <img src="gallery6.jpg" alt="Hot stones" />
-  </section>
-</main>
-
-<footer class="site-footer"><div class="container"><p>© 2025 Montra Thai Massage</p></div></footer>
-</body>
-</html>
-
-
-<!-- location.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Location | Montra Thai Massage</title>
-  <link rel="stylesheet" href="projecttest.css" />
-</head>
-<body>
-<header class="site-header">
-  <div class="container header-container">
-    <a href="projecttest.html" class="logo"><img src="montra-logo.png" alt="Montra Thai Massage logo" /></a>
-    <nav class="nav-menu">
-      <ul>
-        <li><a href="projecttest.html">Home</a></li>
-        <li><a href="pricing.html">Pricing</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="location.html" class="active">Location</a></li>
-      </ul>
-    </nav>
-    <a class="btn-book" href="https://www.vagaro.com">Book Now</a>
-  </div>
-</header>
-
-<main>
-  <section class="page-header"><h1>Find Us</h1></section>
-
-  <section class="location-section container">
-    <p><strong>Address:</strong> 6611 Kirby Drive, Houston, TX 77005</p>
-    <p><strong>Phone:</strong> 832-541-7746</p>
-    <p><strong>Hours:</strong> 10 AM – 8 PM (7 Days a Week)</p>
-
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.099!2d-95.412!3d29.706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c0!2sMontra%20Thai%20Massage!5e0!3m2!1sen!2sus!4v
