@@ -99,7 +99,7 @@ body {
 }
 
 .btn-book:hover {
-  background: #4CAF50;
+  background: #0B2343;
   color: white;
 }
 
@@ -131,11 +131,11 @@ body {
 .home-content h1 {
   font-size: 40px;
   margin-bottom: 20px;
-  color: #0B2343;
+  color: #4CAF50;
 }
 
 .home-content p {
-  color: #4CAF50;
+  color: #0B2343;
   font-size: 18px;
   line-height: 1.6;
   margin-bottom: 12px;
