@@ -15,43 +15,57 @@ body {
 /* HEADER */
 .site-header {
   width: 100%;
-  background: #ffffff;
-  border-bottom: 1px solid #ddd;
+  background: white;
+  padding: 15px 0;
 }
 
 .header-inner {
   max-width: 1200px;
   margin: auto;
-  padding: 15px 20px;
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo img {
-  max-height: 70px;
+  max-height: 120px;
 }
 
-/* NAVIGATION — modeled after original website */
+/* NAV + APPOINTMENT BUTTON (DESKTOP) */
+.header-right {
+  text-align: right;
+}
+
 .site-nav ul {
   list-style: none;
   display: flex;
-  gap: 35px;
-  align-items: center;
+  gap: 30px;
+  justify-content: flex-end;
 }
 
 .site-nav a {
   text-decoration: none;
   letter-spacing: 1px;
   font-size: 0.9rem;
-  font-weight: 500;
   text-transform: uppercase;
   color: #333;
-  padding: 8px 4px;
 }
 
-.site-nav a:hover {
-  opacity: 0.6;
+.btn-appointment {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 14px 24px;
+  border: 2px solid #0c2340;
+  color: #0c2340;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-appointment:hover {
+  background: #0c2340;
+  color: #fff;
 }
 
 /* MAIN CONTENT */
@@ -63,13 +77,13 @@ body {
   max-width: 1100px;
   margin: auto;
   display: flex;
-  flex-wrap: wrap;
   gap: 40px;
+  align-items: flex-start;
 }
 
-/* LEFT SIDE */
+/* LEFT SIDE TEXT */
 .contact-info {
-  flex: 1 1 300px;
+  width: 35%;
 }
 
 .contact-info h2 {
@@ -78,33 +92,16 @@ body {
   font-size: 1.8rem;
 }
 
-.contact-info p {
-  margin-bottom: 20px;
-}
-
-.btn-book {
-  display: inline-block;
-  padding: 14px 26px;
-  background: #0c2340;
-  color: white;
-  font-size: 1rem;
-  text-decoration: none;
-  border-radius: 3px;
-  margin-bottom: 20px;
-}
-
-.btn-book:hover {
-  background: #0a1c33;
-}
-
 .tagline {
   font-style: italic;
-  margin-top: 10px;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #555;
 }
 
 /* MAP */
 .map-wrapper {
-  flex: 1 1 300px;
+  width: 65%;
   border: 1px solid #ddd;
   min-height: 400px;
 }
@@ -118,26 +115,27 @@ body {
 /* FOOTER */
 .site-footer {
   text-align: center;
-  padding: 30px 10px;
+  padding: 35px 10px;
   margin-top: 40px;
-  font-size: 0.9rem;
   color: #666;
   border-top: 1px solid #ddd;
 }
 
-/* RESPONSIVE NAV + LAYOUT */
+/* RESPONSIVE MOBILE */
 @media (max-width: 850px) {
+
   .header-inner {
     flex-direction: column;
-    gap: 15px;
-  }
-}
-
-@media (max-width: 700px) {
-  .site-nav ul {
-    flex-direction: column;
-    gap: 12px;
     text-align: center;
+  }
+
+  .header-right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .site-nav ul {
+    justify-content: center;
   }
 
   .container {
