@@ -58,7 +58,7 @@ body {
 
 /* HOVER EFFECT */
 .site-nav ul li a:hover {
-  color: #0B2343;
+  color: #4CAF50;
 }
 
 .site-nav ul li a::after {
