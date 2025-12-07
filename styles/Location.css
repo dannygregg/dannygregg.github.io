@@ -49,11 +49,15 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* BOOK NOW BAR */
+/* -------------------------
+      BOOK NOW BAR
+-------------------------- */
+
 .cta-bar {
   width: 100%;
   text-align: center;
   padding: 15px 0;
+  background: #f9f9f9;
 }
 
 .btn-book {
@@ -64,6 +68,12 @@ body {
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
+  transition: 0.25s;
+}
+
+.btn-book:hover {
+  background: #0B2343;
+  color: white;
 }
 
 /* -------------------------
@@ -83,7 +93,10 @@ body {
   gap: 80px;
 }
 
-/* LEFT SIDE TEXT */
+/* -------------------------
+      LEFT SIDE TEXT
+-------------------------- */
+
 .contact-info {
   flex: 1;
 }
@@ -97,6 +110,67 @@ body {
 .tagline {
   margin-top: 30px;
   font-style: italic;
+  color: #777;
 }
 
-/* RIGHT SIDE MAP*
+/* -------------------------
+      RIGHT SIDE MAP
+-------------------------- */
+
+.map-wrapper {
+  flex: 1;
+  min-height: 350px;
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  border: 0;
+  border-radius: 8px;
+}
+
+/* -------------------------
+          FOOTER
+-------------------------- */
+
+.site-footer {
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 40px;
+  background: #f5f5f5;
+  color: #555;
+  font-size: 14px;
+}
+
+/* -------------------------
+      MOBILE RESPONSIVE
+-------------------------- */
+
+@media (max-width: 900px) {
+
+  .container {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .site-nav ul {
+    gap: 20px;
+  }
+
+  .logo img {
+    max-height: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .site-nav ul {
+    flex-direction: column;
+  }
+
+  .btn-book {
+    width: 80%;
+  }
+}
