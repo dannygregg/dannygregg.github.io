@@ -49,6 +49,10 @@ body {
   letter-spacing: 0.5px;
 }
 
+.site-nav ul li a.active {
+  text-decoration: underline;
+}
+
 /* -------------------------
       BOOK NOW BAR
 -------------------------- */
