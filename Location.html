@@ -1,80 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Montra Thai Massage — Location</title>
-
-  <!-- Fonts: serif for tagline, sans for nav/text -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="styles/Location.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
+  <!-- HEADER -->
   <header class="site-header">
+
     <div class="header-inner">
-
-      <!-- logo (left) -->
       <div class="logo">
-        <a href="Location.html">
-          <img src="images/montra-logo.avif" alt="Montra Thai Massage" />
-        </a>
+        <img src="logo.png" alt="Montra Thai Massage Logo">
       </div>
 
-      <!-- nav + appointment on the right -->
-      <div class="header-right">
-
-        <!-- CSS-only hamburger toggle (visible on small screens) -->
-        <input id="nav-toggle" class="nav-toggle" type="checkbox" aria-label="Open navigation" />
-        <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
-          <span></span>
-        </label>
-
-        <nav class="site-nav" role="navigation" aria-label="Main navigation">
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="Pricing.html">Pricing</a></li>
-            <li><a href="Gallery.html">Gallery</a></li>
-            <li><a class="active" href="Location.html">Location</a></li>
-          </ul>
-        </nav>
-
-        <a class="btn-appointment" href="#" title="Book appointment">›Book Now To Schedule Appointment</a>
-      </div>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">PRICING</a></li>
+          <li><a href="#">GALLERY</a></li>
+          <li><a href="#">LOCATION</a></li>
+        </ul>
+      </nav>
     </div>
+
+    <!-- BOOK NOW BAR BELOW NAV -->
+    <div class="cta-bar">
+      <a href="#" class="btn-book">›Book Now To Schedule Appointment</a>
+    </div>
+
   </header>
 
+  <!-- MAIN CONTENT -->
   <main class="main-content">
     <div class="container">
 
-      <section class="contact-info" aria-labelledby="loc-heading">
-        <h2 id="loc-heading">Location</h2>
+      <div class="contact-info">
+        <h2>Location</h2>
 
-        <p class="address">
+        <p>
           Montra Thai Massage – Houston<br>
           6611 Kirby Drive<br>
           Houston, TX 77005
         </p>
 
-        <p>We are here for you,<br>open 7 days a week.</p>
+        <p>
+          We are here for you,<br>
+          open 7 days a week.
+        </p>
 
         <p class="tagline">"Your Body, Our Passion"</p>
-      </section>
+      </div>
 
-      <aside class="map-wrapper" aria-label="Map">
-        <iframe
-          title="Montra Thai Massage location map"
-          src="https://maps.google.com/maps?q=29.709735,-95.418515&z=15&output=embed"
-          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </aside>
-
-    </div>
-  </main>
-
-  <footer class="site-footer">
-    <p>© 2024 Montra Thai Massage, Houston, Texas</p>
-  </footer>
-
-</body>
-</html>
+      <div class="map-wrapper">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.329479038954!2d-95.418843!3d29.709769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c0e97c1c1e4d%3A0xf8f59c8eab6b1b1a!2s6611%20Kirby%20Dr%2C%20Houston%2C%20TX%2077005!5e0!3m2!1sen!2sus!4v1700000000000"
