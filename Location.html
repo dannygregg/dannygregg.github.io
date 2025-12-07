@@ -1,76 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Montra Thai Massage — Location</title>
-  <link rel="stylesheet" href="styles/location.css">
-</head>
 
+  <!-- Fonts: serif for tagline, sans for nav/text -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
 
-<header class="site-header">
-  <div class="header-inner">
+  <header class="site-header">
+    <div class="header-inner">
 
-    <!-- Logo -->
-    <div class="logo">
-      <img src="images/montra-logo.avif" alt="Montra Thai Massage Logo">
+      <!-- logo (left) -->
+      <div class="logo">
+        <a href="Location.html">
+          <img src="images/montra-logo.avif" alt="Montra Thai Massage" />
+        </a>
+      </div>
+
+      <!-- nav + appointment on the right -->
+      <div class="header-right">
+
+        <!-- CSS-only hamburger toggle (visible on small screens) -->
+        <input id="nav-toggle" class="nav-toggle" type="checkbox" aria-label="Open navigation" />
+        <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+          <span></span>
+        </label>
+
+        <nav class="site-nav" role="navigation" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="Pricing.html">Pricing</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a class="active" href="Location.html">Location</a></li>
+          </ul>
+        </nav>
+
+        <a class="btn-appointment" href="#" title="Book appointment">›Book Now To Schedule Appointment</a>
+      </div>
     </div>
+  </header>
 
-    <!-- Right side nav + appointment button -->
-    <div class="header-right">
-      <nav class="site-nav">
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Location</a></li>
-        </ul>
-      </nav>
+  <main class="main-content">
+    <div class="container">
 
-      <a href="#" class="btn-appointment">›Book Now To Schedule Appointment</a>
+      <section class="contact-info" aria-labelledby="loc-heading">
+        <h2 id="loc-heading">Location</h2>
+
+        <p class="address">
+          Montra Thai Massage – Houston<br>
+          6611 Kirby Drive<br>
+          Houston, TX 77005
+        </p>
+
+        <p>We are here for you,<br>open 7 days a week.</p>
+
+        <p class="tagline">"Your Body, Our Passion"</p>
+      </section>
+
+      <aside class="map-wrapper" aria-label="Map">
+        <iframe
+          title="Montra Thai Massage location map"
+          src="https://maps.google.com/maps?q=29.709735,-95.418515&z=15&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </aside>
+
     </div>
+  </main>
 
-  </div>
-</header>
-
-<!-- MAIN CONTENT -->
-<main class="main-content">
-  <div class="container">
-
-    <!-- Left text -->
-    <div class="contact-info">
-      <h2>Location</h2>
-
-      <p>
-        Montra Thai Massage – Houston<br>
-        6611 Kirby Drive<br>
-        Houston, TX 77005
-      </p>
-
-      <p>
-        We are here for you,<br>
-        open 7 days a week.
-      </p>
-
-      <p class="tagline">"Your Body, Our Passion"</p>
-    </div>
-
-    <!-- Map -->
-    <div class="map-wrapper">
-      <iframe
-        src="https://maps.google.com/maps?q=29.709735,-95.418515&z=15&output=embed"
-        allowfullscreen
-        loading="lazy">
-      </iframe>
-    </div>
-
-  </div>
-</main>
-
-<footer class="site-footer">
-  <p>© 2024 Montra Thai Massage, Houston, Texas</p>
-</footer>
+  <footer class="site-footer">
+    <p>© 2024 Montra Thai Massage, Houston, Texas</p>
+  </footer>
 
 </body>
 </html>
