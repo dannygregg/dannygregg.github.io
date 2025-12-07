@@ -44,7 +44,50 @@
             title="Must be 999-999-999 format"
             autocomplete="on"><br>
     </fieldset>
+    <fieldset>
+        <legend>Membership Information</legend>
 
+        <label for="membership_type">Membership Type:</label>
+        <select name="membership_type" id="membership_type">
+            <option value="Junior">Junior</option>
+            <option value="Regular">Regular</option>
+            <option value="Charter">Charter</option>
+        </select><br>
 
+        <label for="start_date">Starting Date:</label>
+        <input type="date" name="start_date" id="start_date" required><br>
+
+        <label for="tickets">Tickets:</label>
+        <input type="number" name="tickets" id="tickets"
+            min="1" max="4" value="2"><br>
+    </fieldset>
+    <fieldset>
+        <legend>How Did You Hear About Us?</legend>
+
+        <input type="checkbox" name="source" id="website" value="Website">
+        <label for="website">Website</label><br>
+
+        <input type="checkbox" name="source" id="friend" value="Friend">
+        <label for="friend">Friend</label><br>
+
+        <input type="checkbox" name="source" id="advertisement" value="Advertisement">
+        <label for="advertisement">Advertisement</label><br>
+
+        <input type="checkbox" name="source" id="other" value="Other">
+        <label for="other">Other</label><br>
+    </fieldset>
+    <fieldset>
+        <legend>Comments</legend>
+
+        <label for="comments">Your Comments:</label><br>
+        <textarea name="comments" id="comments" rows="5" cols="40"
+            placeholder="Enter any additional information here..."></textarea>
+    </fieldset>
+        <fieldset>
+        <legend>Submit Your Membership</legend>
+
+        <input type="submit" value="Submit Membership">
+        <input type="reset" value="Reset Form">
+    </fieldset>
 </body>
 </html>
