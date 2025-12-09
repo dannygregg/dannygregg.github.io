@@ -208,6 +208,17 @@ body {
   color: #555;
   line-height: 1.6;
 }
+/* -------------------------
+      FOOTER
+-------------------------- */
+.site-footer {
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 40px;
+  background: #f9f9f9;
+  color: #0B2343;
+  font-size: 14px;
+}
 
 /* -------------------------
       RESPONSIVE LAYOUT
