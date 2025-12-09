@@ -204,4 +204,44 @@ body {
 -------------------------- */
 
 @media (max-width: 900px) {
-  .services-grid
+  .services-grid {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .container {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .site-nav ul {
+    gap: 20px;
+  }
+
+  .logo img {
+    max-height: 140px;
+  }
+
+  .home-content h1 {
+    font-size: 32px;
+  }
+
+  .home-content p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .site-nav ul {
+    flex-direction: column;
+  }
+
+  .btn-book {
+    width: 80%;
+  }
+}
