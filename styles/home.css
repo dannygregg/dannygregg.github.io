@@ -57,7 +57,7 @@ body {
   text-decoration: underline;
 }
 
-/* HOVER EFFECT */
+/* NAV HOVER EFFECT */
 .site-nav ul li a:hover {
   color: #4CAF50;
 }
@@ -171,6 +171,7 @@ body {
   text-align: center;
 }
 
+/* IMAGE + HOVER EFFECT */
 .service-card img {
   width: 100%;
   height: 260px;
@@ -178,6 +179,12 @@ body {
   border-radius: 10px;
   margin-bottom: 20px;
   border: 3px solid #0B2343;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service-card img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
 }
 
 .service-card h3 {
@@ -192,46 +199,9 @@ body {
   line-height: 1.6;
 }
 
-/* RESPONSIVE LAYOUT */
-@media (max-width: 900px) {
-  .services-grid {
-    flex-direction: column;
-    gap: 50px;
-  }
-}
+/* -------------------------
+      RESPONSIVE LAYOUT
+-------------------------- */
 
 @media (max-width: 900px) {
-
-  .container {
-    flex-direction: column;
-    gap: 40px;
-    text-align: center;
-  }
-
-  .site-nav ul {
-    gap: 20px;
-  }
-
-  .logo img {
-    max-height: 140px;
-  }
-
-  .home-content h1 {
-    font-size: 32px;
-  }
-
-  .home-content p {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 600px) {
-
-  .site-nav ul {
-    flex-direction: column;
-  }
-
-  .btn-book {
-    width: 80%;
-  }
-}
+  .services-grid
