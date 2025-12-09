@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Montra Thai Massage — Pricing</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<!-- HTML content goes here. CSS moved to styles.css -->
+<div class="wrap">
+<header>
+<div class="brand">
+<div class="logo">Montra</div>
+<div>
+<div class="brand-title">Montra Thai Massage</div>
+<div class="brand-location">Houston, Texas</div>
+</div>
+</div>
+<nav>
+<a href="#">Home</a>
+<a href="#pricing">Pricing</a>
+<a href="#book" class="cta">Book Now</a>
+</nav>
+</header>
+
+
+<div class="hero panel">
+<h1>Pricing</h1>
+<div class="tag">"Your Body, Our Passion"</div>
+<a href="#book" class="cta">Book Now To Schedule Appointment</a>
+</div>
+
+
+<div class="content">
+<main>
+<section class="panel">
+<div class="intro">We offer a variety of massages to suit your needs: <strong>"Thai Experience"</strong></div>
+<div class="mutedsmall">NOTE: Please arrive before the scheduled time. Late arrivals may cause appointments to be canceled.</div>
+
+
+<div class="section">
+<div class="section-title">Regular Massage</div>
+<div class="card">
+<div class="left">
+<div class="title">Regular Massage — 40 mins</div>
+<div class="meta">Relaxing, therapeutic</div>
+</div>
+<div class="price">$60</div>
+</div>
+
+
+<div class="section-title">Thai, Swedish, Combo, Deep Tissue, Prenatal</div>
+<div class="services">
+<div class="card"><div class="left"><div class="title">1 hour</div><div class="meta">Standard session</div></div><div class="price">$80</div></div>
+<div class="card"><div class="left"><div class="title">90 mins</div><div class="meta">Extended care</div></div><div class="price">$120</div></div>
+<div class="card"><div class="left"><div class="title">2 hours</div><div class="meta">Deep renewal</div></div><div class="price">$150</div></div>
+</div>
+
+
+<div class="section-title">Couples Massage</div>
+<div class="couples">
+<div class="card"><div class="left"><div class="title">1 hour — Couples</div></div><div class="price">$150</div></div>
+<div class="card"><div class="left"><div class="title">90 mins — Couples</div></div><div class="price">$240</div></div>
+<div class="card"><div class="left"><div class="title">2 hours — Couples</div></div><div class="price">$300</div></div>
+</div>
+</div>
+</section>
+
+
+<section class="panel">
+<div class="section-title">Cupping Packages — Coming Soon</div>
+<div class="services">
+<div class="card"><div class="left"><div class="title">30 mins cupping (lower back)</div></div><div class="price">$40</div></div>
+<div class="card"><div class="left"><div class="title">30 mins cupping (back, shoulder, neck)</div></div><div class="price">$50</div></div>
+<div class="card"><div class="left"><div class="title">60 min full body cupping</div></div><div class="price">$75</div></div>
+<div class="card"><div class="left"><div class="title">1 hr massage + cupping combo</div></div><div class="price">$110</div></div>
+<div class="card"><div class="left"><div class="title">90 min massage + cupping combo</div></div><div class="price">$150</div></div>
+<div class="card"><div class="left"><div class="title">2 hr massage + cupping combo</div></div><div class="price">$180</div></div>
+</div>
+</section>
+</main>
+
+
+<aside class="panel aside">
+<h3>Quick Info</h3>
+<div class="note">Please arrive 5–10 minutes early. Comfortable clothing recommended. Gift certificates and couple rooms available.</div>
+
+
+<h4>Contact</h4>
+<div class="mutedsmall">Phone: (555) 555-5555<br>Email: info@montra.example</div>
+
+
+<h4>Hours</h4>
+<div class="mutedsmall">Mon–Sat: 10 AM — 8 PM<br>Sun: 11 AM — 6 PM</div>
+</aside>
+</div>
+
+
+<footer>© 2024 Montra Thai Massage, Houston, Texas</footer>
+</div>
+</body>
+</html>
