@@ -39,7 +39,11 @@
   <!-- MAIN CONTENT -->
   <main class="main-content">
     <div class="gallery-wrapper">
+
       <h1 class="gallery-title">Our Gallery</h1>
+
+      <!-- Quote -->
+      <p class="tagline">"Your Body, Our Passion"</p>
 
       <div class="gallery-grid">
         <img src="images/massage1.webp" alt="Massage Image 1">
@@ -52,10 +56,33 @@
     </div>
   </main>
 
+  <!-- LIGHTBOX POPUP -->
+  <div id="lightbox">
+    <img id="lightbox-img" src="">
+  </div>
+
   <!-- FOOTER -->
   <footer class="site-footer">
     <p>© 2024 Montra Thai Massage, Houston, Texas</p>
   </footer>
+
+  <!-- SCRIPT FOR IMAGE ZOOM -->
+  <script>
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const galleryImages = document.querySelectorAll(".gallery-grid img");
+
+    galleryImages.forEach(img => {
+      img.addEventListener("click", () => {
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+      });
+    });
+
+    lightbox.addEventListener("click", () => {
+      lightbox.style.display = "none";
+    });
+  </script>
 
 </body>
 </html>
